@@ -54,6 +54,76 @@ body {
 /* ✨ Scrollbar */
 ::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-thumb{background:#ff66ff;border-radius:4px;}
 section{scroll-margin-top:80px;}
+
+/* 🤖 Chatbot Styles */
+#chat-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  max-height: 400px;
+  background: rgba(26, 0, 51, 0.95);
+  border: 2px solid #ff66cc;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  box-shadow: 0 0 20px #ff66cc;
+  display: none;
+}
+
+#chat-header {
+  background: #ff66cc;
+  padding: 10px;
+  border-radius: 12px 12px 0 0;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+#chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 0.9rem;
+  max-height: 250px;
+}
+
+.bot-msg { color: #ff99ff; margin-bottom: 8px; }
+.user-msg { color: #fff; margin-bottom: 8px; text-align: right; }
+
+#chat-input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ff66cc;
+}
+
+#chat-input {
+  flex: 1;
+  background: transparent;
+  border: 1px solid #ff66cc;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  outline: none;
+}
+
+#chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff66cc;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 0 15px #ff66cc;
+  font-size: 30px;
+}
 </style>
 </head>
 
@@ -78,32 +148,39 @@ section{scroll-margin-top:80px;}
 
 <section id="home" class="flex flex-col items-center text-center px-4 py-16">
   <h1 class="text-3xl sm:text-4xl font-bold mb-6 glow-text whitespace-nowrap">Welcome to My Portfolio!</h1>
-  <img src="images/Just me.jpg" class="w-40 h-40 rounded-full border-4 border-pink-500 object-cover glow-border float">
+  <div class="relative mb-6">
+    <img src="Just me.jpg" alt="Celyn" class="w-40 h-40 rounded-full border-4 border-pink-500 object-cover glow-border float">
+  </div>
+</section>
+
+<section id="about" class="text-center px-4 py-12">
+  <h2 class="text-3xl font-bold mb-6 text-pink-400 glow-text whitespace-nowrap">✨ About Me ✨</h2>
+  <div class="max-w-md sm:max-w-2xl mx-auto text-gray-200">
+    <p>I am <span class="font-bold text-white">Celyn</span>, a 2nd Year BSIT Student.</p>
+  </div>
 </section>
 
 <section id="resume" class="text-center px-4 py-12">
-  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text">📄 My Resume</h2>
-  <div class="max-w-xs mx-auto bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-4 glow-border float">
-    <img src="images/resume.jpg" class="w-full rounded-lg mb-4">
-    <a href="images/resume.jpg" download class="inline-block py-2 px-6 bg-pink-600 rounded-lg">Download</a>
+  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">📄 My Resume</h2>
+  <div class="max-w-xs mx-auto">
+    <div class="bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-4 glow-border float">
+      <img src="resume.jpg" alt="My Resume" class="w-full rounded-lg mb-4">
+      <a href="resume.jpg" download class="inline-block py-2 px-6 bg-pink-600 text-white font-bold rounded-lg hover:bg-pink-700 transition">Download</a>
+    </div>
   </div>
 </section>
 
 <section id="certificates" class="text-center px-4 py-12">
-  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text">📜 Certificates</h2>
-
-  <div class="max-w-2xl mx-auto space-y-6">
-
-    <div class="bg-[#1a0033]/70 p-4 rounded glow-border">
-      <p>March 10, 2026</p>
-      <img src="images/March 10.jpg" class="w-full rounded">
+  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">📜 IT Training Certificate</h2>
+  <div class="flex flex-col items-center gap-8 max-w-2xl mx-auto">
+    <div class="bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-6 glow-border float w-full">
+      <p class="text-pink-300 font-semibold mb-2">March 10, 2026</p>
+      <img src="March 10.jpg" class="w-full h-auto rounded-lg border border-pink-400 shadow-md">
     </div>
-
-    <div class="bg-[#1a0033]/70 p-4 rounded glow-border">
-      <p>March 12, 2026</p>
-      <img src="images/March 12.jpg" class="w-full rounded">
+    <div class="bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-6 glow-border float w-full">
+      <p class="text-pink-300 font-semibold mb-2">March 12, 2026</p>
+      <img src="March 12.jpg" class="w-full h-auto rounded-lg border border-pink-400 shadow-md">
     </div>
-
   </div>
 </section>
 
