@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -190,10 +189,12 @@
     <h2 class="text-3xl font-bold mb-10 text-pink-300 glow-text whitespace-nowrap">🧪 My Simulation</h2>
     <div class="max-w-4xl mx-auto bg-[#1a0033]/80 border border-pink-500 rounded-3xl p-6 shadow-[0_0_25px_#ff00cc]">
         <h3 class="text-2xl font-bold mb-6 text-white">BSIT-2B Attendance System</h3>
+        
         <div class="flex flex-wrap justify-center gap-4 mb-8">
             <input type="date" id="attendanceDate" class="bg-black/50 border border-pink-500 text-white p-2 rounded-lg outline-none">
             <input type="text" id="subjectName" placeholder="Subject Name" class="bg-black/50 border border-pink-500 text-white p-2 rounded-lg outline-none">
         </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div class="bg-white/5 p-4 rounded-2xl border border-pink-400/30">
                 <h4 class="text-pink-300 font-bold mb-4">Girls 🌸</h4>
@@ -204,7 +205,9 @@
                 <div id="boysList" class="space-y-2 text-left h-64 overflow-y-auto pr-2"></div>
             </div>
         </div>
+
         <button onclick="generateSummary()" class="px-16 py-3 bg-pink-600 rounded-full font-bold hover:bg-pink-700 transition transform hover:scale-105 shadow-lg">DONE ✨</button>
+
         <div id="summaryPanel" class="hidden mt-8 p-6 bg-black/60 rounded-2xl border border-pink-500 text-left">
             <h3 class="text-xl font-bold text-center text-pink-400 mb-2">Attendance Report</h3>
             <p id="reportMeta" class="text-center text-gray-400 mb-6"></p>
@@ -328,7 +331,6 @@
 
     function renderList(list, elementId) {
         const container = document.getElementById(elementId);
-        container.innerHTML = ""; // Clear existing
         list.sort().forEach(name => {
             container.innerHTML += `
             <div class="flex justify-between items-center p-2 bg-white/5 rounded-lg mb-1 hover:bg-pink-500/20 transition">
