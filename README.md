@@ -1,3 +1,5 @@
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -54,7 +56,7 @@ body {
 ::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-thumb{background:#ff66ff;border-radius:4px;}
 section{scroll-margin-top:80px;}
 
-/* 💬 Chatbot Styles */
+/* 🤖 Chatbot Styles */
 #chat-container {
   position: fixed;
   bottom: 90px;
@@ -160,33 +162,33 @@ section{scroll-margin-top:80px;}
 </section>
 
 <section id="resume" class="text-center px-4 py-12">
-  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">📜 My Resume</h2>
+  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">📄 My Resume</h2>
   <div class="max-w-xs mx-auto">
     <div class="bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-4 glow-border float">
-      <img src="resume.jpg" alt="My Resume" class="w-full rounded-lg mb-4">
-      <a href="resume.jpg" download class="inline-block py-2 px-6 bg-pink-600 text-white font-bold rounded-lg hover:bg-pink-700 transition">Download</a>
+      <img src="resume.png" alt="My Resume" class="w-full rounded-lg mb-4">
+      <a href="resume.png" download class="inline-block py-2 px-6 bg-pink-600 text-white font-bold rounded-lg hover:bg-pink-700 transition">Download</a>
     </div>
   </div>
 </section>
 
 <section id="certificates" class="text-center px-4 py-12">
-  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">🎖️ IT Training Certificate</h2>
+  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">📜 IT Training Certificate</h2>
   <div class="flex flex-col items-center gap-8 max-w-2xl mx-auto">
     <div class="bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-6 glow-border float w-full">
       <p class="text-pink-300 font-semibold mb-2">March 10, 2026</p>
       <p class="text-gray-200 text-sm mb-4">A touch of magic in technical training.</p>
-      <img src="March 10.jpg" class="w-full h-auto rounded-lg border border-pink-400 shadow-md" alt="Training Certificate 1">
+      <img src="March 10.png" class="w-full h-auto rounded-lg border border-pink-400 shadow-md" alt="Training Certificate 1">
     </div>
     <div class="bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-6 glow-border float w-full">
       <p class="text-pink-300 font-semibold mb-2">March 12, 2026</p>
       <p class="text-gray-200 text-sm mb-4">Enchanted skills mastered with care.</p>
-      <img src="March 12.jpg" class="w-full h-auto rounded-lg border border-pink-400 shadow-md" alt="Training Certificate 2">
+      <img src="March 12.png" class="w-full h-auto rounded-lg border border-pink-400 shadow-md" alt="Training Certificate 2">
     </div>
   </div>
 </section>
 
 <section id="simulation" class="text-center px-4 py-12">
-  <h2 class="text-3xl font-bold mb-10 text-pink-300 glow-text whitespace-nowrap">🎮 My Simulation</h2>
+  <h2 class="text-3xl font-bold mb-10 text-pink-300 glow-text whitespace-nowrap">🧪 My Simulation</h2>
   <div class="max-w-4xl mx-auto bg-[#1a0033]/80 border border-pink-500 rounded-3xl p-6 shadow-[0_0_25px_#ff00cc]">
     <h3 class="text-2xl font-bold mb-6 text-white">BSIT-2B Attendance System</h3>
     
@@ -226,7 +228,7 @@ section{scroll-margin-top:80px;}
 </section>
 
 <section id="skills" class="text-center px-4 py-12">
-  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">🎨 My Skills</h2>
+  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">🛠️ My Skills</h2>
   <div class="flex flex-col items-center gap-8 max-w-md mx-auto">
     <img src="banner.jpg" class="w-full h-auto rounded-lg glow-border float">
     <img src="chessboard.png" class="w-full h-auto rounded-lg glow-border float">
@@ -237,12 +239,12 @@ section{scroll-margin-top:80px;}
 </section>
 
 <section id="experience" class="text-center px-4 py-12">
-  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">💼 Experience</h2>
+  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">🏆 Experience</h2>
   <div class="max-w-md sm:max-w-3xl mx-auto space-y-8 text-center">
     
     <div class="bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-6 glow-border float">
       <h3 class="text-2xl font-semibold text-pink-300 glow-text mb-2">Video Editing Champion</h3>
-      <p class="text-gray-300 mb-2">🏆 Year: 2021</p>
+      <p class="text-gray-300 mb-2">🏅 Year: 2021</p>
       <p class="text-gray-200 text-sm mb-4">PNP Anniversary Video Editing Contest.</p>
       <div class="flex flex-col items-center gap-6">
         <img src="film maker pro.png" class="w-24 h-24 rounded-lg glow-border">
@@ -252,7 +254,7 @@ section{scroll-margin-top:80px;}
 
     <div class="bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-6 glow-border float">
       <h3 class="text-2xl font-semibold text-pink-300 glow-text mb-2">Tarpapel Editor in Birthdays</h3>
-      <p class="text-pink-300 font-medium mb-2">🎂 Year: 2020</p>
+      <p class="text-pink-300 font-medium mb-2">🎨 Year: 2020</p>
       <p class="text-gray-200 text-sm mb-6 max-w-lg mx-auto">Designed personalized layouts using Canva.</p>
       <div class="flex flex-col items-center">
         <div class="relative w-28 h-28 bg-[#0a0015] border-2 border-pink-600 rounded-xl shadow-[0_0_15px_#ff66cc] flex items-center justify-center">
@@ -273,7 +275,7 @@ section{scroll-margin-top:80px;}
 </section>
 
 <section id="tools" class="text-center px-4 py-12">
-  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">🛠️ Tools I Used</h2>
+  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">🪄 Tools I Used</h2>
   <div class="flex flex-row justify-center items-center gap-4 sm:gap-6">
     <img src="canva.jpeg" class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg glow-border">
     <img src="figma.jpeg" class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg glow-border">
@@ -283,7 +285,7 @@ section{scroll-margin-top:80px;}
 </section>
 
 <section id="contact" class="text-center px-4 py-12">
-  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">✉️ Let's Connect</h2>
+  <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">💌 Let's Connect</h2>
   <div class="max-w-sm mx-auto p-6 bg-[#1a0033]/70 rounded-2xl border border-pink-600 glow-border">
     <form class="space-y-4">
       <input type="text" placeholder="Name" class="w-full p-2 border border-pink-400 rounded bg-transparent text-white">
@@ -294,7 +296,7 @@ section{scroll-margin-top:80px;}
   </div>
 </section>
 
-<div id="chat-toggle" onclick="toggleChat()">💬</div>
+<div id="chat-toggle" onclick="toggleChat()">🤖</div>
 <div id="chat-container">
   <div id="chat-header"><span>Celyn's Bot</span><button onclick="toggleChat()">✖</button></div>
   <div id="chat-messages"><div class="bot-msg">✨ Hi! How can I help?</div></div>
@@ -320,8 +322,8 @@ section{scroll-margin-top:80px;}
   function botResponse(u) {
     let r = "That's magical!";
     const t = u.toLowerCase();
-    if (t.includes("resume")) r = "Download my resume in the section above! 📜";
-    else if (t.includes("cert")) r = "I have two IT Training Certificates! 🎖️";
+    if (t.includes("resume")) r = "Download my resume in the section above! 📄";
+    else if (t.includes("cert")) r = "I have two IT Training Certificates! 🏆";
     else if (t.includes("simulation") || t.includes("attendance")) r = "Check out the BSIT-2B Attendance system in the Simulation section! ✨";
     addMessage(r, 'bot-msg');
   }
