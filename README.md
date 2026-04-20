@@ -164,7 +164,7 @@ section{scroll-margin-top:80px;}
   <div class="max-w-xs mx-auto">
     <div class="bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-4 glow-border float">
       <img src="resume.jpg" alt="My Resume" class="w-full rounded-lg mb-4">
-      <a href="resume.png" download class="inline-block py-2 px-6 bg-pink-600 text-white font-bold rounded-lg hover:bg-pink-700 transition">Download</a>
+      <a href="resume.jpg" download class="inline-block py-2 px-6 bg-pink-600 text-white font-bold rounded-lg hover:bg-pink-700 transition">Download</a>
     </div>
   </div>
 </section>
