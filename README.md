@@ -255,7 +255,6 @@
         </div>
         
         <div class="w-full bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-4 glow-border float">
-            <h3 class="text-pink-300 font-bold mb-4 text-sm">Figma E-commerce Design</h3>
             <img src="figma ecommerce.jpg" class="w-full h-auto rounded-lg mb-4" alt="Figma E-commerce">
             <div class="flex gap-2">
                 <a href="https://www.figma.com/proto/9MoENLQK7Un0xgoNOWLQIS/?node-id=637-5447&p=f&t=f8hJwc3kD0kQkKZQ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=637%3A5447&show-proto-sidebar=1" target="_blank" class="flex-1 py-2 bg-pink-500 text-white font-bold rounded-lg hover:bg-pink-600 transition text-xs sm:text-sm">View Figma</a>
