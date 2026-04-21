@@ -139,7 +139,7 @@
     <a href="#resume">Resume</a>
     <a href="#certificates">Certificates</a>
     <a href="#simulation">Simulation</a>
-    <a href="#skills">Skills</a>
+    <a href="#projects">My Projects</a>
     <a href="#experience">Experience</a>
     <a href="#tutorials">Tutorials</a>
     <a href="#contact">Contact</a>
@@ -236,12 +236,18 @@
     </div>
 </section>
 
-<section id="skills" class="text-center px-4 py-12">
-    <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">🛠️ My Skills</h2>
+<section id="projects" class="text-center px-4 py-12">
+    <h2 class="text-3xl font-bold mb-8 text-pink-400 glow-text whitespace-nowrap">🛠️ My Projects</h2>
     <div class="flex flex-col items-center gap-8 max-w-md mx-auto">
         <img src="banner.jpg" class="w-full h-auto rounded-lg glow-border float">
         <img src="chessboard.png" class="w-full h-auto rounded-lg glow-border float">
-        <img src="figma ecommerce.jpg" class="w-full h-auto rounded-lg glow-border float">
+        
+        <div class="w-full bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-4 glow-border float">
+            <h3 class="text-pink-300 font-bold mb-4">Figma E-commerce Design</h3>
+            <img src="figma ecommerce.jpg" class="w-full h-auto rounded-lg mb-4" alt="Figma E-commerce">
+            <a href="https://www.figma.com/proto/9MoENLQK7Un0xgoNOWLQIS/?node-id=637-5447&p=f&t=f8hJwc3kD0kQkKZQ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=637%3A5447&show-proto-sidebar=1" target="_blank" class="block w-full py-2 bg-pink-600 text-white font-bold rounded-lg hover:bg-pink-700 transition text-sm">View Figma E-commerce</a>
+        </div>
+
         <img src="product design.png" class="w-full h-auto rounded-lg glow-border float">
         <img src="tshirt layout.png" class="w-full h-auto rounded-lg glow-border float">
     </div>
