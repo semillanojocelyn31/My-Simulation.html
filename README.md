@@ -358,8 +358,8 @@
 
 <div id="chat-toggle" onclick="toggleChat()">🤖</div>
 <div id="chat-container">
-    <div id="chat-header"><span>Celyn's Bot</span><button onclick="toggleChat()">✖</button></div>
-    <div id="chat-messages"><div class="bot-msg">✨ Hi there! I am Celyn's Assistant. How can I help you today?</div></div>
+    <div id="chat-header"><span>Celyn's AI Bot</span><button onclick="toggleChat()">✖</button></div>
+    <div id="chat-messages"><div class="bot-msg">✨ Hi there! I am Celyn's AI Assistant. How can I help you today?</div></div>
     <div id="chat-input-area"><input type="text" id="chat-input" placeholder="Ask about projects, skills, resume..." onkeypress="handleChat(event)"></div>
 </div>
 
@@ -384,7 +384,7 @@
         let r = "";
         const t = u.toLowerCase();
 
-        // 🧠 Keyword-based Logic
+        // 🧠 Keyword-based Logic (Acting like an AI)
         if (t.includes("hello") || t.includes("hi") || t.includes("hey")) {
             r = "Hello! ✨ I'm here to guide you through Celyn's portfolio. What would you like to know?";
         }
@@ -415,12 +415,13 @@
         else if (t.includes("who") || t.includes("about")) {
             r = "Celyn is a 2nd Year BSIT Student passionate about digital experiences and IT! 👩‍💻";
         }
+        // Fallback for general inquiries
         else {
             const genericRespones = [
                 "That's an interesting question! ✨ Feel free to explore the different sections of the portfolio to learn more about Celyn.",
                 "I'm not quite sure about that, but I can tell you about Celyn's projects or resume! 🪄",
                 "Celyn is always working on something magical! Check out the 'My Projects' section for her latest work. 🛠️",
-                "I'm a simple bot here to help you navigate. Is there a specific section you'd like to see? ✨"
+                "I'm a simple AI here to help you navigate. Is there a specific section you'd like to see? ✨"
             ];
             r = genericRespones[Math.floor(Math.random() * genericRespones.length)];
         }
