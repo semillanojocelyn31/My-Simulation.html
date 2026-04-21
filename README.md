@@ -238,7 +238,7 @@ section{scroll-margin-top:80px;}
 </section>
 
 <footer class="py-6 text-center text-gray-600 text-xs">
-  <p>&copy; 2026 Jocelyn Semillano | Crafted with Magic & IT Skill</p>
+  <p>Crafted with Magic & IT Skill</p>
 </footer>
 
 <div id="chat-toggle" onclick="toggleChat()">🤖</div>
@@ -310,7 +310,6 @@ section{scroll-margin-top:80px;}
     const t = u.toLowerCase();
     let r = "I can tell you about Celyn's projects, certificates, or her achievements! ✨";
     
-    // Core Logic Responses
     if (t.includes("hello") || t.includes("hi")) {
       r = "✨ Magical greetings! How can I help you explore Celyn's portfolio today?";
     } else if (t.includes("resume") || t.includes("download")) {
