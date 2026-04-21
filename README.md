@@ -207,7 +207,7 @@ section{scroll-margin-top:80px;}
       </div>
     </div>
 
-    <button onclick="generateSummary()" class="py-3 px-16 bg-pink-600 rounded-xl font-bold hover:bg-pink-700 transition">DONE ✨</button>
+    <button onclick="generateSummary()" class="inline-block py-2 px-8 bg-pink-600 text-white font-bold rounded-lg hover:bg-pink-700 transition">DONE ✨</button>
 
     <div id="summaryPanel" class="hidden mt-8 p-8 bg-black/80 rounded-3xl border border-pink-500 text-left">
       <h3 class="text-xl font-bold text-center text-pink-400 mb-4">Attendance Report</h3>
