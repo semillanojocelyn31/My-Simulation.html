@@ -164,9 +164,9 @@
     <div class="max-w-xs mx-auto">
         <div class="bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-4 glow-border float">
             <img src="resume.jpg" alt="My Resume" class="w-full rounded-lg mb-4">
-            <div class="flex gap-3 justify-center">
-                <a href="resume.jpg" target="_blank" class="flex-1 py-2 bg-pink-500 text-white text-xs font-bold rounded-lg hover:bg-pink-600 transition">Full View</a>
-                <a href="resume.jpg" download class="flex-1 py-2 bg-pink-700 text-white text-xs font-bold rounded-lg hover:bg-pink-800 transition">Download</a>
+            <div class="flex gap-2">
+                <a href="resume.jpg" target="_blank" class="flex-1 py-2 bg-pink-500 text-white font-bold rounded-lg hover:bg-pink-600 transition text-sm">Full View</a>
+                <a href="resume.jpg" download class="flex-1 py-2 bg-pink-700 text-white font-bold rounded-lg hover:bg-pink-800 transition text-sm">Download</a>
             </div>
         </div>
     </div>
@@ -179,18 +179,18 @@
             <p class="text-pink-300 font-semibold mb-2">March 10, 2026</p>
             <p class="text-gray-200 text-sm mb-4">A touch of magic in technical training.</p>
             <img src="March 10.jpg" class="w-full h-auto rounded-lg border border-pink-400 shadow-md mb-4" alt="Training Certificate 1">
-            <div class="flex gap-3 justify-center">
-                <a href="March 10.jpg" target="_blank" class="flex-1 py-2 bg-pink-500 text-white text-xs font-bold rounded-lg hover:bg-pink-600 transition">Full View</a>
-                <a href="March 10.jpg" download class="flex-1 py-2 bg-pink-700 text-white text-xs font-bold rounded-lg hover:bg-pink-800 transition">Download</a>
+            <div class="flex gap-2">
+                <a href="March 10.jpg" target="_blank" class="flex-1 py-2 bg-pink-500 text-white font-bold rounded-lg hover:bg-pink-600 transition text-sm">Full View</a>
+                <a href="March 10.jpg" download class="flex-1 py-2 bg-pink-700 text-white font-bold rounded-lg hover:bg-pink-800 transition text-sm">Download</a>
             </div>
         </div>
         <div class="bg-[#1a0033]/70 border border-pink-500 rounded-2xl p-6 glow-border float w-full">
             <p class="text-pink-300 font-semibold mb-2">March 12, 2026</p>
             <p class="text-gray-200 text-sm mb-4">Enchanted skills mastered with care.</p>
             <img src="March 12.jpg" class="w-full h-auto rounded-lg border border-pink-400 shadow-md mb-4" alt="Training Certificate 2">
-            <div class="flex gap-3 justify-center">
-                <a href="March 12.jpg" target="_blank" class="flex-1 py-2 bg-pink-500 text-white text-xs font-bold rounded-lg hover:bg-pink-600 transition">Full View</a>
-                <a href="March 12.jpg" download class="flex-1 py-2 bg-pink-700 text-white text-xs font-bold rounded-lg hover:bg-pink-800 transition">Download</a>
+            <div class="flex gap-2">
+                <a href="March 12.jpg" target="_blank" class="flex-1 py-2 bg-pink-500 text-white font-bold rounded-lg hover:bg-pink-600 transition text-sm">Full View</a>
+                <a href="March 12.jpg" download class="flex-1 py-2 bg-pink-700 text-white font-bold rounded-lg hover:bg-pink-800 transition text-sm">Download</a>
             </div>
         </div>
     </div>
