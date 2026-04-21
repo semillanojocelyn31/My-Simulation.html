@@ -43,6 +43,23 @@
 
         /* ✨ Text glow */
         .glow-text{text-shadow:0 0 10px #ff99ff,0 0 20px #ff66cc;}
+        
+        /* 🌸 Enhanced Pink Glow for the System Title */
+        .system-glow {
+            color: #fff;
+            text-shadow: 
+                0 0 7px #fff,
+                0 0 10px #ff00de,
+                0 0 21px #ff00de,
+                0 0 42px #ff00de;
+            animation: text-flicker 3s infinite alternate;
+        }
+        
+        @keyframes text-flicker {
+            0% { opacity: 0.9; }
+            100% { opacity: 1; text-shadow: 0 0 10px #fff, 0 0 20px #ff00de, 0 0 40px #ff00de, 0 0 60px #ff00de; }
+        }
+
         .glow-border{box-shadow:0 0 15px 4px #ff66ff;transition:.3s; overflow: hidden; }
         .glow-border:hover{box-shadow:0 0 30px 10px #ff99ff;transform:scale(1.03);}
 
@@ -197,7 +214,7 @@
 <section id="simulation" class="text-center px-4 py-12">
     <h2 class="text-3xl font-bold mb-10 text-pink-300 glow-text whitespace-nowrap">🧪 My Simulation</h2>
     <div class="max-w-4xl mx-auto bg-[#1a0033]/80 border border-pink-500 rounded-3xl p-6 shadow-[0_0_25px_#ff00cc]">
-        <h3 class="text-2xl font-bold mb-6 text-white">BSIT-2B Attendance System</h3>
+        <h3 class="text-2xl font-bold mb-6 system-glow">BSIT-2B Attendance System</h3>
         
         <div class="flex flex-wrap justify-center gap-4 mb-8">
             <input type="date" id="attendanceDate" class="bg-black/50 border border-pink-500 text-white p-2 rounded-lg outline-none">
@@ -218,7 +235,7 @@
         <button onclick="generateSummary()" class="px-16 py-3 bg-pink-600 rounded-full font-bold hover:bg-pink-700 transition transform hover:scale-105 shadow-lg">DONE ✨</button>
 
         <div id="summaryPanel" class="hidden mt-8 p-6 bg-black/60 rounded-2xl border border-pink-500 text-left">
-            <h3 class="text-xl font-bold text-center text-pink-400 mb-2">Attendance Report</h3>
+            <h3 class="text-xl font-bold text-center system-glow mb-2">Attendance Report</h3>
             <p id="reportMeta" class="text-center text-gray-400 mb-6"></p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
@@ -345,60 +362,25 @@
         const chat = document.getElementById('chat-container');
         chat.style.display = (chat.style.display === 'none' || chat.style.display === '') ? 'flex' : 'none';
     }
-    
     function handleChat(e) {
         if (e.key === 'Enter') {
             const input = document.getElementById('chat-input');
             const msg = input.value.trim();
-            if (msg) { 
-                addMessage(msg, 'user-msg'); 
-                input.value = ''; 
-                setTimeout(() => botResponse(msg), 500); 
-            }
+            if (msg) { addMessage(msg, 'user-msg'); input.value = ''; setTimeout(() => botResponse(msg), 500); }
         }
     }
-    
     function addMessage(t, c) {
         const d = document.createElement('div'); d.className = c; d.innerText = t;
         const m = document.getElementById('chat-messages'); m.appendChild(d); m.scrollTop = m.scrollHeight;
     }
-    
     function botResponse(u) {
         let r = "That sounds magical! Could you tell me more?";
         const t = u.toLowerCase();
-        
-        // Navigation & General Knowledge
-        if (t.includes("hello") || t.includes("hi") || t.includes("hey")) {
-            r = "Magical greetings! I can tell you about Celyn's projects, skills, or even show you her resume. What are you curious about?";
-        }
-        else if (t.includes("who are you") || t.includes("bot")) {
-            r = "I'm Celyn's AI assistant, here to guide you through her enchanted portfolio! ✨";
-        }
-        else if (t.includes("resume") || t.includes("cv")) {
-            r = "You can view or download Celyn's resume in the 'Resume' section. It's a great look at her journey! 📄";
-        }
-        else if (t.includes("cert") || t.includes("training")) {
-            r = "Celyn has completed several IT training programs. You can find her certificates from March 2026 in the 'Certificates' section! 🏆";
-        }
-        else if (t.includes("simulation") || t.includes("attendance") || t.includes("system")) {
-            r = "Celyn built a custom BSIT-2B Attendance System! You can try it out yourself in the Simulation section above. ✨";
-        }
-        else if (t.includes("project") || t.includes("work")) {
-            r = "She has worked on Figma e-commerce designs, UI layouts, and banner graphics. Check out the 'My Projects' section! 🛠️";
-        }
-        else if (t.includes("skill") || t.includes("tool")) {
-            r = "Celyn is skilled in Canva, Figma, Photoshop, Premiere Pro, and web tech like HTML/Tailwind! 🪄";
-        }
-        else if (t.includes("video") || t.includes("edit") || t.includes("youtube")) {
-            r = "She's a Video Editing Champion (2021)! You can watch her tutorials in the YouTube section. 🎥";
-        }
-        else if (t.includes("contact") || t.includes("email") || t.includes("message")) {
-            r = "You can send her a message directly through the 'Contact' form at the bottom of the page! 💌";
-        }
-        else if (t.includes("thank")) {
-            r = "You're very welcome! Let me know if there's anything else you'd like to see. ✨";
-        }
-
+        if (t.includes("hello") || t.includes("hi") || t.includes("hey")) r = "Magical greetings! I can tell you about Celyn's projects, skills, or even show you her resume.";
+        else if (t.includes("who are you") || t.includes("bot")) r = "I'm Celyn's AI assistant, here to guide you through her enchanted portfolio! ✨";
+        else if (t.includes("resume")) r = "You can view or download Celyn's resume in the 'Resume' section. 📄";
+        else if (t.includes("cert")) r = "Check out the 'Certificates' section for her IT training credentials! 🏆";
+        else if (t.includes("simulation") || t.includes("attendance")) r = "The BSIT-2B Attendance System is right there in the Simulation section! ✨";
         addMessage(r, 'bot-msg');
     }
 
